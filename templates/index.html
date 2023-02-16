@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/style.css')}}">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <P>LOGO</P>
+        <h1>Clientes</h1>
+    </header>
+    <main>
+        
+        <div id="formulario">
+           
+                <div><label for="nome">Nome: </label><input type="text" name="nome" id="nome" maxlength="50" placeholder="Insira seu nome aqui"></div>
+
+                <div><label for="CPF">CPF: </label><input type="text" name="CPF" id="CPF" maxlength="11" placeholder="000.000.000-00"></div>
+        
+                <div><label for="idade">Idade: </label><input type="number" name="idade" min="18" max="200" id="idade" placeholder="idade"></div>
+
+                <div>
+                    <button id="cadastrar">cadastrar</button>
+                    <button id="buscar">buscar</button>
+                </div>
+
+        </div>
+        <div id="retorno">
+            <div>ID</div>
+            <div>NOME</div>
+            <div>CPF</div>
+            <div>IDADE</div>
+        </div>
+    </main>
+    <footer>Desenvolvido por: <a href="">Erick Allan</a></footer>
+    <script src="{{url_for('static', filename='scripts/script.js')}}"></script>
+</body>
+</html>

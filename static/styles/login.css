@@ -1,0 +1,175 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+   transition: all 0.5s
+}
+
+/*fontes*/
+@import url('https://fonts.googleapis.com/css2?family=B612+Mono:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@300;400;500;600&display=swap');
+
+body{
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(25deg, #3583E6,#C1E61D);
+}
+#login h1{
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 100;
+    font-size: 1.9em;
+}
+
+@media (min-width:800px){
+    #login{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        width: 80%;
+        max-width: 1000px;
+        height: 60%;
+        padding: 40px;
+        background-color: rgba(56, 3, 3, 0.904);
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        border-radius: 15px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.685);
+    }
+    #login>div{
+        
+        min-width: 40%;
+        max-width: 800px;
+    }
+    .container{
+        border-left: 3px solid white;
+        padding: 50px;
+    }
+    #info{
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    img{
+        min-width: 300px;
+        max-width: 250px;
+        filter: invert(1);
+        opacity: 0.4;
+    }
+    .ipt-log{
+        margin-top: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 290px;
+        height: 25px;
+        font-size: 1.2em;
+        display: block;
+        text-indent: 15px;
+    }
+    #log-btn{
+        position: absolute;
+        top: 60%;
+        left: 79%;
+        width: 80px;
+        height: 30px;
+        font-family: 'B612 Mono', monospace;
+        text-transform: uppercase;
+        font-weight: 500;
+        background-color: #0576ED ;
+        color: white;
+        
+    }
+    p{
+        font-family: 'B612 Mono', monospace;
+        text-decoration: underline;
+        font-size: 1.2em;  
+    }
+    #log-btn:hover{
+        background-color: #4D9CF0;
+    }
+    
+    #log-btn:active{
+        background-color: #23476E;
+    }
+}
+
+
+
+
+
+@media (max-width:800px){
+    #info{
+        display: none;
+    }
+    #login{
+        background-color: rgba(56, 3, 3, 0.904);
+        width: 300px;
+        height: 300px;
+        padding: 50px;
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.822);
+        
+    }
+    
+    
+    #login h1{
+        text-align: center;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 100;
+        font-size: 1.9em;
+    }
+    .formulario{
+        margin-top: 40px;
+    }
+    .ipt-log{
+        margin-top: 15px;
+        width: 290px;
+        height: 30px;
+        font-size: 1.2em;
+        display: block;
+        text-indent: 15px;
+    }
+    
+    #log-btn{
+        position: absolute;
+        top:75%;
+        margin: 5px;
+        width: 290px;
+        height: 40px;
+        font-size: 1.5em;
+        color: white;
+        background-color: #0576ED;
+        text-transform: uppercase;
+        font-family: 'B612 Mono', monospace;
+        font-weight: 500;
+        border-radius: 5px;
+    }
+    #log-btn:hover{
+        background-color: #4D9CF0;
+    }
+    
+    #log-btn:active{
+        background-color: #23476E;
+    }
+}
+@media (max-width:300px){
+    
+    #login{
+        width: 100%;
+        height: 800px;
+        margin: 0;
+    }
+}
+
+

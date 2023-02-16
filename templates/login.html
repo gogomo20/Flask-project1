@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/login.css')}}">
+    <title>Document</title>
+</head>
+<body>
+    <div id="login">
+        <div class="container">
+            <h1>Login</h1>
+            <div class="formulario">
+                <input type="text" class="ipt-log" name="" id="nome" placeholder="Nome">
+                <input type="password" class="ipt-log" name="" id="senha" placeholder="Senha">
+            </div>
+            <button id="log-btn">Entrar</button>
+        </div>
+        <div id="info">
+
+
+            <picture>
+                <source media="(min-width: 800px)" srcset="{{url_for('static',filename = 'images/logo-500.png')}}">
+                <img src="{{url_for('static',filename = 'images/logo-800.png')}}" alt="">
+            </picture>
+            <p>Mountain Sistem</p>
+        </div>        
+    </div>
+    <script src="{{url_for('static', filename='scripts/login.js')}}"></script>
+</body>
+</html>
